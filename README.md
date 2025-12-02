@@ -1,6 +1,9 @@
 # Convex Crash Course
-
+Learned From: https://youtu.be/4MgsvjMb59Q
 A learning project exploring Convex - a real-time backend platform for building modern applications.
+
+<img width="2041" height="1337" alt="image" src="https://github.com/user-attachments/assets/cdc591b3-1b9b-4ec7-bc51-92a35bc46a84" />
+
 
 ## What is Convex?
 
