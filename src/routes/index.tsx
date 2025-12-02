@@ -18,15 +18,28 @@ function Home() {
 
   console.log(response)
   return (
-    <main className="p-8 flex flex-col gap-16">
-      <h1 className="text-4xl font-bold text-center">Welcome</h1>
-      <p>Numbers: {response?.join(', ')}</p>
-      <button
-        onClick={() => addNumber({ value: Math.floor(Math.random() * 100) })}
-      >
-        Add Number
-      </button>
-      <button onClick={() => callMyAction()}>Call Action</button>
+    <main className="p-8 flex flex-col gap-10">
+      <h1 className="text-4xl font-bold text-center">Convex Crash Course</h1>
+      <div className="max-w-lg mx-auto flex flex-col items-center justify-center">
+        <p>Latest 10 Numbers from the DB</p>
+        <p>{response?.join(', ')}</p>
+      </div>
+
+      <div className="flex flex-col gap-4 max-w-sm mx-auto">
+        <button
+          className="bg-dark dark:bg-light text-light dark:text-dark text-sm px-4 py-2 rounded-md border-2 cursor-pointer"
+          onClick={() => addNumber({ value: Math.floor(Math.random() * 100) })}
+        >
+          Add Random Number
+        </button>
+
+        <button
+          className="bg-dark dark:bg-light text-light dark:text-dark text-sm px-4 py-2 rounded-md border-2 cursor-pointer"
+          onClick={() => callMyAction()}
+        >
+          Call Action to Add Random Number
+        </button>
+      </div>
     </main>
   )
 }
